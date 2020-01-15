@@ -46,6 +46,7 @@ let navHeader = document.querySelector('nav')
 let aHeader = navHeader.querySelectorAll('a')
 
 aHeader[0].textContent = (siteContent['nav']['nav-item-1'])
+// aHeader[0].text = (siteContent['nav']['nav-item-1'])
 aHeader[1].textContent = (siteContent['nav']['nav-item-2'])
 aHeader[2].textContent = (siteContent['nav']['nav-item-3'])
 aHeader[3].textContent = (siteContent['nav']['nav-item-4'])
@@ -53,12 +54,20 @@ aHeader[4].textContent = (siteContent['nav']['nav-item-5'])
 aHeader[5].textContent = (siteContent['nav']['nav-item-6'])
 
 
+for(let i = 0; i < aHeader.length; i++){
+  aHeader[i].style.color = ('green')
+}
+
+
 let header1 = document.querySelector('h1')
 header1.textContent = (siteContent['cta']['h1'])
-header1.style.marginRight = ('50px')
-header1.style.paddingLeft = ("35px")
-header1.style.width = ('200px')
+
 // header.style.border = ('1px solid red')
+
+let ctaTxt = document.querySelector('.cta-text')
+
+ctaTxt.style.width =('250px')
+
 
 let ctaImg = document.getElementById('cta-img')
 ctaImg.setAttribute('src',siteContent['cta']['img-src'])
@@ -70,7 +79,14 @@ btnHeader.style.fontFamily = ('Titillium Web, sans-serif')
 
 btnHeader.style.fontSize = ('18px')
 
+/** 
 btnHeader.style.marginBottom = ('15px')
+header1.style.marginRight = ('50px')
+header1.style.paddingLeft = ("35px")
+
+*/
+header1.style.width = ('175px')
+
 
 
 let mainCtaHeader = document.getElementsByTagName('h4')
